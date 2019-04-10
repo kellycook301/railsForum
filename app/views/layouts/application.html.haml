@@ -1,0 +1,21 @@
+!!!
+%html 
+%head
+  %title Kelly's Rails Forum
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  %link{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Lato", type: "text/css" }
+  %link{ rel: "stylesheet", href: "http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" }
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+%body
+  %header.main_header.clearfix
+    .wrapper
+      #buttons
+        = link_to "New Post", new_post_path
+      #logo 
+        %p Kelly's Rails Forum
+.wrapper    
+  %p.notice= notice
+  %p.alert= alert
+.wrapper  
+  = yield
