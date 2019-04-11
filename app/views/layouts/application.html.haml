@@ -10,10 +10,14 @@
 %body
   %header.main_header.clearfix
     .wrapper
-      #buttons
-        = link_to "New Post", new_post_path
       #logo 
-        %p Kelly's Rails Forum
+        %p= link_to "Kelly's Rails Forum", root_path
+      #buttons
+      - if user_signed_in?
+        = link_to "New Post", new_post_path
+      - else
+        = link_to "Sign Up", new_user_registration_path
+        = link_to "Sign In", new_user_session_path
 .wrapper    
   %p.notice= notice
   %p.alert= alert

@@ -17,36 +17,37 @@
 body {
     font-family: 'Lato', sans-serif;
     background: #EDEFF0;
-   }
+    }
 
 #buttons {
     float: right;
-   }
+    
+    }
    
 .wrapper {
     width: 60%;
     max-width: 1140px;
     margin: 0 auto;
-   }
+    }
 
 .main_header {
     width: 80%;
     max-width: 1140px;
     margin: 0 auto;
-   }
+    }
 
 p {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -1px;
     font-size: 1.2rem;
-   }
+    }
 
 #posts {
     background: white;
     padding: 2em 5%;
     border-radius: .5em;
-   }
+    }
     
 .post {
      margin: 1em 0;
@@ -56,7 +57,7 @@ p {
 
 .title {
       margin: 0;
-     }
+    }
 
 a {
     color: #397CAC;
